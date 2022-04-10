@@ -1,0 +1,42 @@
+.main-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 100px 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.main-div .navi-content {
+    border-bottom: 1px solid black;
+}
+
+.child-div figure {
+    margin: 0 0 20px 0;
+}
+.child-div figure img {
+    width: 100%;
+    height: 200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.child-div figcaption {
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    color: white;
+    /* background-color: #212e6e; */
+    background: linear-gradient(40deg, #212e6e, #f3df88);
+}
+
+.main-div img {
+    width: 50px;
+}
+
+.eachItem {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
