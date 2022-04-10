@@ -85,22 +85,23 @@ const Home = () => {
                 </figcaption>
             </figure>
 
-            <div className='addItems'>
-                <input type="text" 
+            <div className='todo-text'>
+                <div className='addItems'>
+                    <input type="text" 
                     placeholder='Add Item'
                     className='form-control'
                     value={inputData}
                     onChange={(event) => setInputData(event.target.value)}
-                />
-                {toggleButton ? 
-                <i className='edit-btn' onClick={addItem}>edit</i>
-                 : 
-                <i className='add-btn' onClick={addItem}>➕</i>}
-            </div>
+                    />
+                    {toggleButton ? 
+                    <i className='edit-btn' onClick={addItem}>edit</i>
+                     : 
+                    <i className='add-btn' onClick={addItem}>➕</i>}
+                </div>
 
-            {/*SHOW OUR ITEMS */}
-            <div className='showItems'>
-                {items.map((curElm) => {
+                {/*SHOW OUR ITEMS */}
+                <div className='showItems'>
+                    {items.map((curElm) => {
                     return (
                         <div className='eachItem' key={curElm.id}>
                             <h3>{curElm.name}</h3>
@@ -110,14 +111,15 @@ const Home = () => {
                             </div>
                         </div>
                     )
-                })}
-            </div>
+                    })}
+                </div>
 
-            {/*DELETE ALL ITEMS */}
-            <div className='showItems'>
-                <button className='del-btn' onClick={removeAll}>
-                    <span>CHECK LIST</span>
-                </button>
+                {/*DELETE ALL ITEMS */}
+                <div className='showItems'>
+                    <button className='del-btn' onClick={removeAll}>
+                        <span>Finish</span>
+                    </button>
+                </div>
             </div>
 
         </div>

@@ -11,7 +11,9 @@
 
 .main-div .navi-content {
     border-bottom: 1px solid black;
+    padding: 10px;
 }
+
 
 .child-div figure {
     margin: 0 0 20px 0;
@@ -31,12 +33,35 @@
     background: linear-gradient(40deg, #212e6e, #f3df88);
 }
 
+.todo-text {
+    /* width: 500px; */
+    width: 100%; /* 정렬하려는 요소의 넓이를 반드시 지정 */ 
+    margin: 0 auto;
+}
 .main-div img {
     width: 50px;
+}
+
+.addItems input {
+    border: none;
+    width: 200px;
+}
+
+.addItems i {
+    padding: 0 10px;
 }
 
 .eachItem {
     display: flex;
     justify-content: center;
     align-items: baseline;
+}
+
+.eachItem h3 {
+    width: 200px;
+    margin: 0;
+}
+
+.showItems .del-btn {
+    padding: 5px;
 }
